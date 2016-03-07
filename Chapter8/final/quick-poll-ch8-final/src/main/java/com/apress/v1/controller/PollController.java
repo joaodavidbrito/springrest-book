@@ -23,7 +23,9 @@ import com.wordnik.swagger.annotations.Api;
 import com.wordnik.swagger.annotations.ApiOperation;
 import com.wordnik.swagger.annotations.ApiResponse;
 import com.wordnik.swagger.annotations.ApiResponses;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
+@CrossOrigin 
 @RestController("pollControllerV1")
 @RequestMapping("/v1/")
 @Api(value = "polls", description = "Poll API")
